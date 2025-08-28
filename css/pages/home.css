@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;     
+}
+
+body {
+    background-color: var(--bg-color-figma);
+    color: var(--text-color);
+    position: relative;
+    z-index: 0;
+}
+
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10rem 7% 2rem;
+    background-color: var(--bg-color-figma);
+    position: relative; /* Limita elementos absolutos */
+    /* overflow: hidden;   Evita que elementos ultrapassem */
+    z-index: -1;
+}
+
+
+
+/* Aqui começa a configuração da section home */
+.home {
+    display: flex;
+    align-items: center;
+    position: unset;
+    z-index: 0; /* Alterando agora antes era: 1 */
+}
+
+.home .home-content {
+    position: absolute;
+    max-width: 37rem; 
+    z-index: 2; /* Coloca o conteúdo acima do efeito */
+    top: 8rem; 
+}
+
+/* .home-content {
+    z-index: 1;  Preciso verificar se é necessario 
+} */
+
+.home-content h1 {
+    font-size: 4.6rem; 
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+
+.home-content p {
+    font-size: 2.0rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+input.btn, a.btn {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--button-background-color);
+    border-radius: 5rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border: 3px solid var(--button-border-background-color);
+    transition: .5s ease;
+
+}
+
+input.btn:hover, a.btn:hover{
+    background: var(--button-background-hover-color);
+    color: var(--white-color);
+    
+}
+
+.imagem_placa_home {
+    display: flex;
+    align-items: center;
+    padding: 0rem 6% 3rem;
+    position: absolute;
+    top: 46rem;
+    right: 0;
+    width: 100%;
+    height: 44.8vh;
+    /* min-height: 100vh; */
+    flex-direction: column;
+}
+
+.imagem_home {
+    width: 100%; /* Ajusta para a largura total do contêiner */
+    height: 45.7vh; /* Ajusta a altura para 100% da altura da viewport */
+    object-fit: fill; /* Faz a imagem cobrir o espaço sem distorcer */
+    z-index: 2;
+    position: relative;
+    background-size: cover; /* Garante que a imagem cubra todo o espaço */
+}
+/* Aqui termina a configuração da section home */
+
+.circle-effect {
+    position: absolute;
+    top: 68rem;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7));
+    filter: blur(4rem);
+    opacity: 0.6;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#circle-effect-left-home {
+    right: 50%;
+    left: auto;
+    top: 34rem;
+}
+
