@@ -46,7 +46,6 @@ section {
 }
 
 .home .home-content {
-    max-width: 37rem; 
     display: flex;
     align-items: center;
     flex-direction: column;
