@@ -1,8 +1,3 @@
-// Adiciona a classe sticky ao header no carregamento da página
-window.onload = () => {
-  header.classList.add('sticky');
-};
-
 // Seleciona elementos importantes
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
@@ -10,6 +5,12 @@ const navLinks = document.querySelectorAll('header nav a');
 const sections = document.querySelectorAll('section');
 const header = document.querySelector('.header');
 const darkModeIcon = document.querySelector('#darkMode-icon');
+
+
+// Cor da letra doo header
+window.onload = () => {
+  header.classList.add('sticky');
+};
 
 // Evento de clique no menu icon para abrir/fechar navbar
 menuIcon.onclick = () => {
