@@ -1,0 +1,16 @@
+.projects_content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.circle_projects {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    background-color: #1f2f8ab0;
+    border-radius: 50%;
+    filter: blur(5rem);
+    z-index: 0;
+}
