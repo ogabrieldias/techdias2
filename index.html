@@ -9,9 +9,12 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+    
+    <!-- Icones -->
     <!-- box-icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- /box-icons -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Links de CSS -->
     <link rel="stylesheet" href="css/pages/home.css"> <!-- Link style.css -->
@@ -22,11 +25,14 @@
     <link rel="stylesheet" href="css/responsive/responsive.css"> <!-- Link para responsividade -->
     <link rel="stylesheet" href="css/themes/temas.css"> <!-- Link para temas -->
 
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Links de JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!-- swiper js -->
+    <script src="js/pages/home.js" defer></script> <!-- home js -->
+    <script src="js/pages/sobre.js" defer></script> <!-- sobre js -->
 
-    <!-- custom js -->
-    <script src="js/pages/home.js" defer></script>
+
+
     
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -154,19 +160,97 @@
         </div>
     </section> <!-- Class /sobre | ID /sobre  -->
     
-    <section class="projects" id="projects" style="background-color: red;"> <!-- Class serviços | ID serviços -->
+    <section class="projects" id="projects" style="background-color: black;"> <!-- Class serviços | ID serviços -->
         <div class="projects_content">
             <div class="circle_projects"></div>
             <span class="title" style="font-size: 10rem; color: #ffffff45; z-index: 1; font-family: Rajdhani, sans-serif; font-weight: 700; filter: blur(2px);">
-                ABOUT
+                PROJECTS
             </span>
-            <h2 style="font-size: 3.75rem; position: absolute; color: white;">ABOUT</h2>
+            <h2 style="font-size: 3.75rem; position: absolute; color: white;">PROJECTS</h2>
         </div>
-        <div class="container_detalhe_projects" style="display: flex; align-items: center; justify-content: center;">
+        <div class="container_detalhe_projects" style="display: flex; align-items: center; justify-content: center; margin-bottom: 10rem;">
             <div class="detalhe_left_projects" style="background-color: aliceblue; width: calc(.25rem * 24); height: 1px;"></div>
             <div class="detalhe_center_projects" style="background-color: aliceblue; width: calc(.25rem * 1.5); height: calc(.25rem * 1.5); border-radius: 50%; margin: 0 calc(0.50rem * 2)"></div>
             <div class="detalhe_left_projects" style="background-color: aliceblue; width: calc(.25rem * 24); height: 1px;"></div>
         </div>
+        
+
+        <div class="container_secundario" style="width: 100%; display: flex; flex-wrap: wrap; box-sizing: border-box; padding: 2rem; gap: 2rem;">
+
+        <!-- Coluna dos projetos -->
+        <div class="container_imagem" style="flex: 2 1 300px; min-width: 250px; display: flex; flex-direction: column; gap: 10rem;">
+
+            <!-- Projeto 1 -->
+            <div class="project"
+                data-title="Clima"
+                data-paragraph="Este projeto exibe o clima atual de qualquer cidade informada pelo usuário, mostrando temperatura, condições meteorológicas e uma imagem representativa do local. Utiliza APIs de clima e imagens para oferecer uma experiência rápida, visual e informativa sobre diferentes lugares do mundo."
+                data-tools="JavaScript, Python, Flask, HTML, CSS"
+                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
+            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="project"
+                data-title="Cardápio Digital"
+                data-paragraph="Sistema de delivery com múltiplos métodos de pagamento e dashboards por função."
+                data-tools="Python, JavaScript, Dark Mode, HTML, CSS"
+                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
+            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="project"
+                data-title="Portfolio"
+                data-paragraph="Plataforma comunitária para itens perdidos com modo claro/escuro."
+                data-tools="HTML, CSS, Dark Mode"
+                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
+            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
+            </div>
+
+            <!-- Projeto 4 -->
+            <div class="project"
+                data-title="Android"
+                data-paragraph="Projeto que simula um site Android com efeito moderno."
+                data-tools="HTML, CSS"
+                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
+            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
+            </div>
+
+            <!-- Projeto 5 -->
+            <div class="project"
+                data-title="Login"
+                data-paragraph="Interface de autenticação desenvolvida com foco em simplicidade, responsividade e usabilidade. Ideal para integração com sistemas web que exigem controle de acesso."
+                data-tools="HTML, CSS"
+                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
+            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
+            </div>
+
+            
+            <!-- Projeto 6 -->
+            <div class="project"
+                data-title="Social"
+                data-paragraph="Simulação visual de uma rede social, com páginas estilizadas que representam plataformas populares como Facebook, Instagram, Twitter, YouTube e GitHub. O projeto demonstra domínio de estruturação semântica e design responsivo."
+                data-tools="HTML, CSS"
+                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
+            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
+            </div>
+
+        </div>
+
+        <!-- Coluna da descrição -->
+        <div class="container_descricao" style="flex: 1 1 300px; min-width: 250px; padding: 2rem; box-sizing: border-box;">
+            <div id="fixedText" style="position: sticky; top: 40%;">
+            <h2 id="projectTitle" style="font-size:4rem; color:#3b82f6; margin-bottom: 1rem;">Diteck Technology</h2>
+            <p id="projectParagraph" style="font-size: 1.7rem; color:#d1d5db; margin-bottom: 1rem;">Plataforma full-stack com IA, segurança e dashboards por função.</p>
+            
+                <div id="projectIcons" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <!-- Ícones serão inseridos aqui via JS -->
+                </div>
+            </div>
+
+        </div>
+        </div> 
+
     </section> <!-- Class /serviços | ID /serviços -->
 
     <section class="planos" id="planos" style="background-color: rgb(102, 255, 0);"> <!-- Class planos | ID planos -->
@@ -201,4 +285,4 @@
     </footer>
 
 </body>
-    </html>
+</html>

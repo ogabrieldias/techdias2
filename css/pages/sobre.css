@@ -65,8 +65,39 @@
 
 .icone i {
   font-size: 26px;
-  color: var(--main-color);
+  color: white;
   transition: transform 0.3s ease;
 }
 
 
+
+
+
+.icon-circle {
+  background-color: #374151;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.icon-circle i {
+  color: #00ffcc;
+  font-size: 22px;
+}
+
+
+
+.icon-circle.react-js i { color: #61dafb; }       /* React.js */
+.icon-circle.node-js i { color: #68a063; }        /* Node.js */
+.icon-circle.mongodb i { color: #47a248; }        /* MongoDB */
+.icon-circle.aws-s3 i { color: #ff9900; }         /* AWS S3 */
+.icon-circle.chatbot-ia i { color: #9f7aea; }     /* Chatbot IA */
+.icon-circle.otp-por-email i { color: #f59e0b; }  /* OTP por Email */
+.icon-circle.vue-js i { color: #42b883; }         /* Vue.js */
+.icon-circle.supabase i { color: #3ecf8e; }       /* Supabase */
+.icon-circle.tailwindcss i { color: #38bdf8; }    /* TailwindCSS */
+.icon-circle.dark-mode i { color: #facc15; }      /* Dark Mode */
