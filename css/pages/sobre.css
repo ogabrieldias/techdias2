@@ -1,5 +1,5 @@
 #sobre { /* Background da section */
-  background-color: black;
+  background-color: var(--bg-color-figma);
 }
 
 .sobre_content { /* Aqui começa estilos gerais para o efeito de titulo "About" */
@@ -32,15 +32,15 @@
 }
 
 #h3_about {
-  color: white;
+  color: var(--text-color-figma);
 }
 
 #paragraph_about {
-  color: white;
+  color: var(--text-color-figma);
 }
 
 #h4_about {
-  color: white;
+  color: var(--text-color-figma);
 }
 
 .container_descricao_about { /* Container da direita que engloba a descrição */
@@ -56,24 +56,32 @@
   width: 100%; 
   display: flex; 
   flex-wrap: wrap; 
-  gap: 1rem; 
+  gap: 2rem; 
   color: white; 
   font-size: 1.7rem; 
   margin-bottom: 1rem; 
   box-sizing: border-box;
+  justify-content: center;
 }
 
-.profissao_frontend {
-  width: 200px; 
+.profissao_about {
+  /* width: 200px;  */
   height: 5rem; 
   display: flex; 
-  background-color: #161515; 
+  background-color: var(--button-background-color-02); 
   justify-content: center; 
   align-items: center; 
-  padding: .5rem; 
+  padding: 1.2rem 2.8rem;
   border-radius: 50px; 
-  border: 1.5px solid rgba(255, 255, 255, 0.849); 
+  border: 1.5px solid var(--border-button-color); 
   flex-shrink: 0; flex-grow: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profissao_about:hover {
+  transform: scale(1.10);
+  background-color: var(--button-background-color-02-hover);
 }
 
 .profission_span { 
@@ -153,7 +161,21 @@
   transition: transform 0.3s ease;
 }
 
+.color_connect_icon:hover #gmail {
+  color: #c71610;
+}
 
+.color_connect_icon:hover #whatsapp {
+  color: #4FCE5D;
+}
+
+.color_connect_icon:hover #linkedin {
+  color: #0072b1;
+}
+
+.color_connect_icon:hover #github {
+  color: #6E40C9;
+}
 
 
 

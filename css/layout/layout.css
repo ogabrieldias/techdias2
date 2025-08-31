@@ -6,15 +6,15 @@
     left: 0;
     width: 100%;
     padding: 2rem 7%;
-    background-color: transparent;
+    /* background-color: transparent; */
     display: flex;
     align-items: center;
     z-index: 1000;
     transition: .5s;
+    background: var(--bg-color-header);
 }
 
 .header.sticky {
-    background: var(--bg-color);
     box-shadow:  0 .1rem 1rem var(--shadow-color);
 }
 
@@ -29,13 +29,13 @@
 .navbar a {
     position: relative;
     font-size: 1.7rem;
-    color: var(--text-color);
+    color: var(--text-color-figma);
     font-weight: 500;
     margin-right: 3.5rem;
 }
 
 .header.sticky .navbar a {
-    color: var(--text-color);
+    color: var(--text-color-figma);
 }
 
 .navbar a.active::before {
@@ -64,7 +64,7 @@
 }
 
 .header.sticky #darkMode-icon {
-    color: var(--text-color);
+    color: var(--text-color-figma);
     opacity: .9;
 }
 

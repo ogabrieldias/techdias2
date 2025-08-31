@@ -42,7 +42,10 @@ section {
     display: flex;
     align-items: center;
     position: unset;
-    z-index: 0; /* Alterando agora antes era: 1 */
+    z-index: 0;
+    justify-content: center;
+    align-content: center;
+
 }
 
 .home .home-content {
@@ -55,16 +58,23 @@ section {
     z-index: 1;  Preciso verificar se é necessario 
 } */
 
+.h2_home {
+    font-size: 4rem;
+    color: var(--text-color-figma); 
+}
+
 .home-content h1 {
-    font-size: 4.6rem; 
+    font-size: 10rem; 
     font-weight: 700;
     margin-bottom: .3rem;
+    color: var(--text-color-figma);
 }
 
 .home-content p {
     font-size: 2.0rem;
     font-weight: 700;
     padding-bottom: 2rem;
+    color: var(--text-color-figma);
 }
 
 input.btn, a.btn {
@@ -74,7 +84,7 @@ input.btn, a.btn {
     border-radius: 5rem;
     box-shadow: 0 .2rem .5rem var(--shadow-color);
     font-size: 1.6rem;
-    color: var(--text-color);
+    color: var(--text-color-figma);
     letter-spacing: .1rem;
     font-weight: 600;
     border: 3px solid var(--button-border-background-color);

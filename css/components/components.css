@@ -8,7 +8,7 @@
 
 .title { /* Titulo grande de fundo */
     font-size: 10rem; 
-    color: #ffffff45; 
+    color: var(--text-color-big-title-effect); 
     z-index: 1; 
     font-family: Rajdhani, sans-serif; 
     font-weight: 700; 
@@ -18,14 +18,15 @@
 .main_title { /* Titulo principal */
     font-size: 3.75rem; 
     position: absolute; 
-    color: white;
+    color: var(--text-color-main-title-effect);
 }
 
 .circle_title { /* Efeito blur de circulo com luz */
     position: absolute;
     width: 13rem;
     height: 13rem;
-    background-color: #1f2f8ab0;
+    background-color: rgba(4, 217, 57, 0.411);
+    /* background-color: #1f2f8ab0; */
     border-radius: 50%;
     filter: blur(5rem);
     z-index: 0;
@@ -39,13 +40,13 @@
 }
 
 .detalhe_left_title { /* Detalhe esquerdo */
-    background-color: white; 
+    background-color: var(--detail-color); 
     width: calc(.25rem * 24); 
     height: 1px;
 }
 
 .detalhe_center_title { /* Detalhe central */
-    background-color: white; 
+    background-color: var(--detail-color); 
     width: calc(.25rem * 1.5); 
     height: calc(.25rem * 1.5); 
     border-radius: 50%; 
@@ -53,7 +54,7 @@
 }
 
 .detalhe_right_title { /* Detalhe direito */
-    background-color: white; 
+    background-color: var(--detail-color); 
     width: calc(.25rem * 24); 
     height: 1px;
 }
@@ -86,7 +87,7 @@
     flex: 1 1 300px;
     min-width: 250px;
     background-color: #942525b0;
-    height: auto;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;

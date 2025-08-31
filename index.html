@@ -15,12 +15,15 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Devicon -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
     <!-- Links de CSS -->
     <!-- Pages; -->
     <link rel="stylesheet" href="css/pages/home.css"> <!-- Link style.css -->
     <link rel="stylesheet" href="css/pages/sobre.css"> <!-- Link style.css -->
     <link rel="stylesheet" href="css/pages/projects.css"> <!-- Link style.css -->
+    <link rel="stylesheet" href="css/pages/skills.css"> <!-- Link style.css -->
     <!-- Layout -->
     <link rel="stylesheet" href="css/layout/layout.css"> <!-- Link layout.css -->
     <!-- Responsive -->
@@ -49,8 +52,8 @@
             <a href="#home" class="active" >Home</a> <!-- ID home | /home & Class active -->
             <a href="#sobre">Sobre</a> <!-- ID About -->
             <a href="#projects">Projetos</a> <!-- ID Services -->
-            <a href="#planos">Planos</a> <!-- ID portfolio -->
-            <a href="#depoimentos">Depoimentos</a> <!-- ID contato -->
+            <a href="#habilidades">Habilidades</a> <!-- ID portfolio -->
+            <a href="#certificados">Certificados</a> <!-- ID contato -->
             <a href="#agendar">Agendar</a> <!-- ID contato -->
             <a href="#faq">FAQ</a> <!-- ID contato -->
             <a href="#contatos">Contatos</a> <!-- ID contato -->
@@ -62,12 +65,13 @@
     </header> <!-- Class /Design header -->
 
     <section class="home" id="home"> <!--Class home | ID home -->
-        <div class="home-content" style="background-color: aquamarine;"> <!-- Class home-content -->
-            <p>A Tecnologia da Informação é essencial para indivíduos e organizações, sendo o suporte especializado indispensável para garantir segurança, eficiência operacional e continuidade dos processos.</p>
-            <div class="h1_home" style="background-color: red;">
-                <h1>Name</h1>
+        <div class="home-content"> <!-- Class home-content -->
+            <h2 class="h2_home">Olá, me chamo</h2>
+            <div class="h1_home">
+                <h1>Gabriel</h1>
             </div>
-            <a href="" download="" class="btn">Saiba mais</a>  <!-- Class btn -->
+            <p>Um desenvolvedor de software</p>
+            <a href="" download="" class="btn">Download CV</a>  <!-- Class btn -->
         </div><!-- Class /home-content -->
             
         
@@ -80,7 +84,7 @@
             <span class="title">
                 ABOUT
             </span>
-            <h2 style="font-size: 3.75rem; position: absolute; color: white;">ABOUT</h2>
+            <h2 class="main_title">ABOUT</h2>
         </div>
         <div class="container_detalhe_title">
             <div class="detalhe_left_title"></div>
@@ -99,16 +103,22 @@
                 <p class="paragraph" id="paragraph_about">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci atque hic fugiat impedit accusantium sit minima ipsa fugit voluptates provident illum quos, quam ullam? Delectus repudiandae accusamus voluptas et deserunt!
                 </p>
-                <h4 class="h4" id="h4_about">What I Do</h4>
+                <h4 class="h4" id="h4_about">O que eu faço?</h4>
                 <div class="container_profissao">
-                    <div class="profissao_frontend">
-                        <span class="profission_span">Front-End Development</span>
+                    <div class="profissao_about">
+                        <span class="profission_span">Desenvolvimento Front-End</span>
                     </div>
-                    <div class="profissao_frontend">
-                        <span class="profission_span">Front-End Development</span>
+                    <div class="profissao_about">
+                        <span class="profission_span">Desenvolvimento Back-End</span>
                     </div>
-                    <div class="profissao_frontend">
-                        <span class="profission_span">Front-End Development</span>
+                    <div class="profissao_about">
+                        <span class="profission_span">Infraestrutura de Redes</span>
+                    </div>
+                    <div class="profissao_about">
+                        <span class="profission_span">Reparo e Upgrade</span>
+                    </div>
+                    <div class="profissao_about">
+                        <span class="profission_span">Suporte Técnico</span>
                     </div>
                 </div>
                 <div class="connect_me">
@@ -117,28 +127,28 @@
                         <div class="contato-item">
                             <a href="mailto:gabrieldiass707@gmail.com" class="color_connect_icon">
                                 <div class="icone">
-                                    <i class="bx bx-envelope"></i>
+                                    <i class="bx bx-envelope" id="gmail"></i>
                                 </div>
                             </a>
                         </div>
                         <div class="contato-item">
                             <a href="https://wa.me/5524998558044" target="_blank" class="color_connect_icon">
                                 <div class="icone">
-                                    <i class="bx bx-phone"></i>
+                                    <i class="fa-brands fa-whatsapp" id="whatsapp"></i>
                                 </div>
                             </a>
                         </div>
                         <div class="contato-item">
                             <a href="https://www.linkedin.com/in/ogabrieldias/" target="_blank" class="color_connect_icon">
                                 <div class="icone">
-                                    <i class="bx bxl-linkedin"></i>
+                                    <i class="bx bxl-linkedin" id="linkedin"></i>
                                 </div>                  
                             </a>
                         </div>
                         <div class="contato-item">
                             <a href="https://github.com/ogabrieldias" target="_blank" class="color_connect_icon">
                                 <div class="icone">
-                                    <i class="bx bxl-github"></i>
+                                    <i class="bx bxl-github" id="github"></i>
                                 </div>
                             </a>
                         </div>
@@ -267,27 +277,148 @@
         </div> 
     </section> <!-- Class /projects | ID /projects -->
 
-    <section class="planos" id="planos" style="background-color: rgb(0, 0, 0);"> <!-- Class planos | ID planos -->
+    <section class="habilidades" id="habilidades" > <!-- Class planos | ID planos -->
         <div class="title_content">
             <div class="circle_title"></div> 
-            <span class="title">SKILLS</span>
-            <h2 class="main_title">SKILLS</h2>
+            <span class="title">HABILIDADES</span>
+            <h2 class="main_title">HABILIDADES</h2>
         </div>
         <div class="container_detalhe_title">
             <div class="detalhe_left_title"></div>
             <div class="detalhe_center_title"></div>
             <div class="detalhe_left_title"></div>
         </div>
-        <div class="container_geral">
-            <div class="container_esquerda">
+        <div class="container_geral_skills">
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                </div>
+                <span class="span_skill">HTML5</span>
             </div>
-            <div class="container_direita">
+            
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                </div>
+                <span class="span_skill">CSS3</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <span class="span_skill">JavaScript</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-bootstrap-plain colored"></i>
+                </div>
+                <span class="span_skill">Bootstrap</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+                </div>
+                <span class="span_skill">Python</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-mysql-original colored"></i>
+                </div>
+                <span class="span_skill">MySQL</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-postgresql-plain colored"></i>
+                </div>
+                <span class="span_skill">PostgreSQL</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-firebase-plain colored"></i>
+                </div>
+                <span class="span_skill">Firebase</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+                <span class="span_skill">Git</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-github-original"></i>
+                </div>
+                <span class="span_skill">GitHub</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+                </div>
+                <span class="span_skill">Figma</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-vscode-plain colored"></i>
+                </div>
+                <span class="span_skill">Visual Studio Code</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-powershell-plain"></i>
+                </div>
+                <span class="span_skill">PowerShell</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-windows11-original colored"></i>
+                </div>
+                <span class="span_skill">Windows</span>
+            </div>
+            
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" />
+                </div>
+                <span class="span_skill">Linux</span>
+            </div>
+
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <i class="devicon-kalilinux-original colored"></i>
+                </div>
+                <span class="span_skill">Kali Linux</span>
+            </div>
+            
+            <div class="container_skills_singular">
+                <div class="icone_skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
+                </div>
+                <span class="span_skill">Azure</span>
             </div>
         </div>
     </section> <!-- Class /planos | ID /planos -->
     
-    <section class="depoimentos" id="depoimentos" style="background-color: rgb(255, 115, 0);"> <!-- Class depoimentos | ID depoimentos -->
-        <h1>SECTION DEPOIMENTOS</h1>
+    <section class="certificados" id="certificados" style="background-color: rgb(255, 115, 0);"> <!-- Class depoimentos | ID depoimentos -->
+        <div class="container_geral">
+            <div class="container_esquerda">
+                <h1>SECTION DEPOIMENTOS</h1>
+            </div>
+            <div class="container_direita">
+                <h1>SECTION DEPOIMENTOS</h1>
+            </div>
+        </div>
     </section> <!-- Class /planos | ID /planos -->
 
     <section class="agendar" id="agendar" style="background-color: rgb(229, 255, 0);">
