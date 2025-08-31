@@ -17,23 +17,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Links de CSS -->
+    <!-- Pages; -->
     <link rel="stylesheet" href="css/pages/home.css"> <!-- Link style.css -->
     <link rel="stylesheet" href="css/pages/sobre.css"> <!-- Link style.css -->
     <link rel="stylesheet" href="css/pages/projects.css"> <!-- Link style.css -->
-
+    <!-- Layout -->
     <link rel="stylesheet" href="css/layout/layout.css"> <!-- Link layout.css -->
+    <!-- Responsive -->
     <link rel="stylesheet" href="css/responsive/responsive.css"> <!-- Link para responsividade -->
+    <!-- Temas -->
     <link rel="stylesheet" href="css/themes/temas.css"> <!-- Link para temas -->
+    <!-- Base -->
+    <link rel="stylesheet" href="css/base/cores.css"> <!-- Link para cores --> 
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/components.css"> <!-- Link para components -->
 
-    
     <!-- Links de JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!-- swiper js -->
     <script src="js/pages/home.js" defer></script> <!-- home js -->
-    <script src="js/pages/sobre.js" defer></script> <!-- sobre js -->
-
-
-
-    
+    <script src="js/pages/projects.js" defer></script> <!-- sobre js -->
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     
@@ -72,189 +74,216 @@
     </section> <!-- Class /home | ID /home -->
     
     
-    <section class="sobre" id="sobre" style="background-color: rgb(0, 0, 0);"> <!-- Class sobre | ID sobre  -->
+    <section class="sobre" id="sobre"> <!-- Class sobre | ID sobre  -->
         <div class="sobre_content">
-            <div class="circle_about"></div>
-            <span class="title" style="font-size: 10rem; color: #ffffff45; z-index: 1; font-family: Rajdhani, sans-serif; font-weight: 700; filter: blur(2px);">
+            <div class="circle_title"></div>
+            <span class="title">
                 ABOUT
             </span>
             <h2 style="font-size: 3.75rem; position: absolute; color: white;">ABOUT</h2>
         </div>
-        <div class="container_detalhe_sobre" style="display: flex; align-items: center; justify-content: center; padding-bottom: 7rem;">
-            <div class="detalhe_left_sobre" style="background-color: aliceblue; width: calc(.25rem * 24); height: 1px;"></div>
-            <div class="detalhe_center_sobre" style="background-color: aliceblue; width: calc(.25rem * 1.5); height: calc(.25rem * 1.5); border-radius: 50%; margin: 0 calc(0.50rem * 2)"></div>
-            <div class="detalhe_left_sobre" style="background-color: aliceblue; width: calc(.25rem * 24); height: 1px;"></div>
+        <div class="container_detalhe_title">
+            <div class="detalhe_left_title"></div>
+            <div class="detalhe_center_title"></div>
+            <div class="detalhe_left_title"></div>
         </div>
-        <div class="container_secundario" 
-            style="width: 100%; background-color: aquamarine; display: flex; padding: 1rem; flex-wrap: wrap; box-sizing: border-box;">
-            <div class="container_imagem" 
-                style="flex: 1 1 300px; min-width: 250px; background-color: #942525b0; height: auto;">
+        <div class="container_secundario_about">
+            <div class="container_imagem_about">
+                <img src="images/Avatar/avatar.png" id="avatar" alt="Imagem de Avatar">
             </div>
-            <div class="container_descricao" 
-                style="flex: 7 1 300px; min-width: 250px; background-color: #902594b0; padding: 2rem; box-sizing: border-box; display: flex; flex-direction: column;">
-                <h3 style="font-size: 3rem; margin: 0 0 1rem 0;">Olá, me chamo Gabriel</h3>
-                <p style="font-size: 1.7rem; margin-bottom: 1rem;">
+            <div class="container_descricao_about" >
+                <h3 class="h3" id="h3_about">Olá, me chamo Gabriel</h3>
+                <p class="paragraph" id="paragraph_about">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ad alias dolores delectus nostrum ex mollitia laborum possimus. Cum ipsum inventore maiores iste, nesciunt ut nisi quod quaerat labore? Possimus!
                 </p>
-                <p style="font-size: 1.7rem; margin-bottom: 1rem;">
+                <p class="paragraph" id="paragraph_about">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci atque hic fugiat impedit accusantium sit minima ipsa fugit voluptates provident illum quos, quam ullam? Delectus repudiandae accusamus voluptas et deserunt!
                 </p>
-                <h4 style="font-size: 2.3rem; margin-bottom: 1rem;">What I Do</h4>
-                <div class="container_profissao" 
-                    style="background-color: red; width: 100%; display: flex; flex-wrap: wrap; gap: 1rem; color: white; font-size: 1.7rem; margin-bottom: 1rem; box-sizing: border-box;">
-                    <div class="profissao_frontend"  
-                        style="width: 200px; height: 5rem; display: flex; background-color: #161515; justify-content: center; align-items: center; padding: .5rem; border-radius: 50px; border: 1.5px solid rgba(255, 255, 255, 0.849); flex-shrink: 0; flex-grow: 0;">
-                        <span style="font-family: Rajdhani, sans-serif; font-size: 1.2rem; white-space: nowrap;">Front-End Development</span>
+                <h4 class="h4" id="h4_about">What I Do</h4>
+                <div class="container_profissao">
+                    <div class="profissao_frontend">
+                        <span class="profission_span">Front-End Development</span>
                     </div>
-                    <div class="profissao_frontend"  
-                        style="width: 200px; height: 5rem; display: flex; background-color: #161515; justify-content: center; align-items: center; padding: .5rem; border-radius: 50px; border: 1.5px solid rgba(255, 255, 255, 0.849); flex-shrink: 0; flex-grow: 0;">
-                        <span style="font-family: Rajdhani, sans-serif; font-size: 1.2rem; white-space: nowrap;">Front-End Development</span>
+                    <div class="profissao_frontend">
+                        <span class="profission_span">Front-End Development</span>
                     </div>
-                    <div class="profissao_frontend"  
-                        style="width: 200px; height: 5rem; display: flex; background-color: #161515; justify-content: center; align-items: center; padding: .5rem; border-radius: 50px; border: 1.5px solid rgba(255, 255, 255, 0.849); flex-shrink: 0; flex-grow: 0;">
-                        <span style="font-family: Rajdhani, sans-serif; font-size: 1.2rem; white-space: nowrap;">Front-End Development</span>
+                    <div class="profissao_frontend">
+                        <span class="profission_span">Front-End Development</span>
                     </div>
                 </div>
-                <div class="connect_me" 
-                    style="width: 100%; background-color: blue; flex-shrink: 0; padding: 1rem; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-
-                    <h4 style="font-size: 2.3rem; color: white; margin: 0; align-self: self-start;">Connect With Me</h4>
-                    <div class="container_connect_button" 
-                        style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-self: flex-start;">
-                        <div class="contato-item" 
-                            style="padding: 0.5rem 1rem; border-radius: 8px; text-align: center; color: white; min-width: 120px;">
-                            <a href="mailto:gabrieldiass707@gmail.com" style="color: white; text-decoration: none;">
-                                <div class="icone" style="font-size: 2rem; margin-bottom: 0.3rem;">
+                <div class="connect_me">
+                    <h4 id="h4_connect_me">Connect With Me</h4>
+                    <div class="container_connect_button">
+                        <div class="contato-item">
+                            <a href="mailto:gabrieldiass707@gmail.com" class="color_connect_icon">
+                                <div class="icone">
                                     <i class="bx bx-envelope"></i>
                                 </div>
                             </a>
                         </div>
-                        <div class="contato-item" 
-                            style="padding: 0.5rem 1rem; border-radius: 8px; text-align: center; color: white; min-width: 120px;">
-                            <a href="https://wa.me/5524998558044" target="_blank" style="color: white; text-decoration: none;">
-                                <div class="icone" style="font-size: 2rem; margin-bottom: 0.3rem;">
+                        <div class="contato-item">
+                            <a href="https://wa.me/5524998558044" target="_blank" class="color_connect_icon">
+                                <div class="icone">
                                     <i class="bx bx-phone"></i>
                                 </div>
                             </a>
                         </div>
-                        <div class="contato-item" 
-                            style="padding: 0.5rem 1rem; border-radius: 8px; text-align: center; color: white; min-width: 120px;">
-                            <a href="https://www.linkedin.com/in/ogabrieldias/" target="_blank" style="color: white; text-decoration: none;">
-                                <div class="icone" style="font-size: 2rem; margin-bottom: 0.3rem;">
+                        <div class="contato-item">
+                            <a href="https://www.linkedin.com/in/ogabrieldias/" target="_blank" class="color_connect_icon">
+                                <div class="icone">
                                     <i class="bx bxl-linkedin"></i>
                                 </div>                  
                             </a>
                         </div>
-                        <div class="contato-item" 
-                            style="padding: 0.5rem 1rem; border-radius: 8px; text-align: center; color: white; min-width: 120px;">
-                            <a href="https://github.com/ogabrieldias" target="_blank" style="color: white; text-decoration: none;">
-                                <div class="icone" style="font-size: 2rem; margin-bottom: 0.3rem;">
+                        <div class="contato-item">
+                            <a href="https://github.com/ogabrieldias" target="_blank" class="color_connect_icon">
+                                <div class="icone">
                                     <i class="bx bxl-github"></i>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section> <!-- Class /sobre | ID /sobre  -->
     
-    <section class="projects" id="projects" style="background-color: black;"> <!-- Class serviços | ID serviços -->
-        <div class="projects_content">
-            <div class="circle_projects"></div>
-            <span class="title" style="font-size: 10rem; color: #ffffff45; z-index: 1; font-family: Rajdhani, sans-serif; font-weight: 700; filter: blur(2px);">
-                PROJECTS
-            </span>
-            <h2 style="font-size: 3.75rem; position: absolute; color: white;">PROJECTS</h2>
+    <section class="projects" id="projects"> <!-- Class projects | ID projects -->
+        <div class="title_content">
+            <div class="circle_title"></div> 
+            <span class="title">PROJECTS</span>
+            <h2 class="main_title">PROJECTS</h2>
         </div>
-        <div class="container_detalhe_projects" style="display: flex; align-items: center; justify-content: center; margin-bottom: 10rem;">
-            <div class="detalhe_left_projects" style="background-color: aliceblue; width: calc(.25rem * 24); height: 1px;"></div>
-            <div class="detalhe_center_projects" style="background-color: aliceblue; width: calc(.25rem * 1.5); height: calc(.25rem * 1.5); border-radius: 50%; margin: 0 calc(0.50rem * 2)"></div>
-            <div class="detalhe_left_projects" style="background-color: aliceblue; width: calc(.25rem * 24); height: 1px;"></div>
+        <div class="container_detalhe_title">
+            <div class="detalhe_left_title"></div>
+            <div class="detalhe_center_title"></div>
+            <div class="detalhe_left_title"></div>
         </div>
         
+        <div class="container_secundario">
 
-        <div class="container_secundario" style="width: 100%; display: flex; flex-wrap: wrap; box-sizing: border-box; padding: 2rem; gap: 2rem;">
+            <!-- Coluna dos projetos -->
+            <div class="container_imagem_projects">
 
-        <!-- Coluna dos projetos -->
-        <div class="container_imagem" style="flex: 2 1 300px; min-width: 250px; display: flex; flex-direction: column; gap: 10rem;">
+                <!-- Projeto 1 -->
+                <div class="project_container"
+                    data-title="Clima"
+                    data-paragraph="Este projeto exibe o clima atual de qualquer cidade informada pelo usuário, mostrando temperatura, condições meteorológicas e uma imagem representativa do local. Utiliza APIs de clima e imagens para oferecer uma experiência rápida, visual e informativa sobre diferentes lugares do mundo."
+                    data-tools="JavaScript, Python, Flask, HTML, CSS"
+                    data-link="https://clima-ht49.onrender.com/">
+                    <div id="tela_project_01" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Clima/img_clima.png" class="imagem_projects" alt="Imagem do Projeto Clima ">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fim Projeto 1 -->
 
-            <!-- Projeto 1 -->
-            <div class="project"
-                data-title="Clima"
-                data-paragraph="Este projeto exibe o clima atual de qualquer cidade informada pelo usuário, mostrando temperatura, condições meteorológicas e uma imagem representativa do local. Utiliza APIs de clima e imagens para oferecer uma experiência rápida, visual e informativa sobre diferentes lugares do mundo."
-                data-tools="JavaScript, Python, Flask, HTML, CSS"
-                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
-            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
+                <!-- Projeto 2 -->
+                <div class="project_container"
+                    data-title="Cardápio Digital"
+                    data-paragraph="Sistema de delivery com múltiplos métodos de pagamento e dashboards por função."
+                    data-tools="Python, JavaScript, Dark Mode, HTML, CSS"
+                    data-link="https://ogabrieldias.github.io/cardapio-digital/html/index.html">
+                    <div id="tela_project_02" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Cardapio/img_cardapio.png" class="imagem_projects" alt="Imagem do Projeto Clima ">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 2 -->
+
+                <!-- Projeto 3 -->
+                <div class="project_container"
+                    data-title="Portfolio"
+                    data-paragraph="Plataforma comunitária para itens perdidos com modo claro/escuro."
+                    data-tools="HTML, CSS, Dark Mode"
+                    data-link="https://ogabrieldias.github.io/myportfolio/">
+                    <div id="tela_project_03" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Portfolio/img_portfolio.png" class="imagem_projects" alt="Imagem do Projeto Clima ">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 3 -->
+                
+                <!-- Projeto 4 -->
+                <div class="project_container"
+                    data-title="Android"
+                    data-paragraph="Projeto que simula um site Android com efeito moderno."
+                    data-tools="HTML, CSS"
+                    data-link="https://ogabrieldias.github.io/android/">
+                    <div id="tela_project_04" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Android/img_android.png" class="imagem_projects" alt="Imagem do Projeto Clima ">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 4 -->
+
+                <!-- Projeto 5 -->
+                <div class="project_container"
+                    data-title="Login"
+                    data-paragraph="Interface de autenticação desenvolvida com foco em simplicidade, responsividade e usabilidade. Ideal para integração com sistemas web que exigem controle de acesso."
+                    data-tools="HTML, CSS"
+                    data-link="https://ogabrieldias.github.io/projeto-login/">
+                    <div id="tela_project_05" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Login/img_login.png" class="imagem_projects" alt="Imagem do Projeto Clima ">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 5 -->
+
+                <!-- Projeto 6 -->
+                <div class="project_container"
+                    data-title="Social"
+                    data-paragraph="Simulação visual de uma rede social, com páginas estilizadas que representam plataformas populares como Facebook, Instagram, Twitter, YouTube e GitHub. O projeto demonstra domínio de estruturação semântica e design responsivo."
+                    data-tools="HTML, CSS"
+                    data-link="https://ogabrieldias.github.io/projeto-social/">
+                    <div id="tela_project_06" class="tela" >
+                        <div class="container_imagem">
+                            <img src="images/Social/img_social.png" class="imagem_projects" alt="Imagem do Projeto Clima ">
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Projeto 6 -->
             </div>
 
-            <!-- Projeto 2 -->
-            <div class="project"
-                data-title="Cardápio Digital"
-                data-paragraph="Sistema de delivery com múltiplos métodos de pagamento e dashboards por função."
-                data-tools="Python, JavaScript, Dark Mode, HTML, CSS"
-                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
-            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
-            </div>
-
-            <!-- Projeto 3 -->
-            <div class="project"
-                data-title="Portfolio"
-                data-paragraph="Plataforma comunitária para itens perdidos com modo claro/escuro."
-                data-tools="HTML, CSS, Dark Mode"
-                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
-            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
-            </div>
-
-            <!-- Projeto 4 -->
-            <div class="project"
-                data-title="Android"
-                data-paragraph="Projeto que simula um site Android com efeito moderno."
-                data-tools="HTML, CSS"
-                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
-            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
-            </div>
-
-            <!-- Projeto 5 -->
-            <div class="project"
-                data-title="Login"
-                data-paragraph="Interface de autenticação desenvolvida com foco em simplicidade, responsividade e usabilidade. Ideal para integração com sistemas web que exigem controle de acesso."
-                data-tools="HTML, CSS"
-                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
-            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
-            </div>
-
-            
-            <!-- Projeto 6 -->
-            <div class="project"
-                data-title="Social"
-                data-paragraph="Simulação visual de uma rede social, com páginas estilizadas que representam plataformas populares como Facebook, Instagram, Twitter, YouTube e GitHub. O projeto demonstra domínio de estruturação semântica e design responsivo."
-                data-tools="HTML, CSS"
-                style="background-color:#000; border:8px solid #374151; border-radius:30px; box-shadow:0 0 30px rgba(0,0,0,0.6); width:100%; height:400px; padding:20px; display:flex; align-items:center; justify-content:center;">
-            <div style="background:linear-gradient(to bottom right, #1f2937, #0f172a); border-radius:20px; width:100%; height:100%;"></div>
-            </div>
-
-        </div>
-
-        <!-- Coluna da descrição -->
-        <div class="container_descricao" style="flex: 1 1 300px; min-width: 250px; padding: 2rem; box-sizing: border-box;">
-            <div id="fixedText" style="position: sticky; top: 40%;">
-            <h2 id="projectTitle" style="font-size:4rem; color:#3b82f6; margin-bottom: 1rem;">Diteck Technology</h2>
-            <p id="projectParagraph" style="font-size: 1.7rem; color:#d1d5db; margin-bottom: 1rem;">Plataforma full-stack com IA, segurança e dashboards por função.</p>
-            
-                <div id="projectIcons" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <!-- Ícones serão inseridos aqui via JS -->
+            <!-- Coluna da descrição -->
+            <div class="container_descricao">
+                <div id="fixedText">
+                <h2 id="projectTitle" >Clima</h2>
+                <p id="projectParagraph">Este projeto exibe o clima atual de qualquer cidade informada pelo usuário, mostrando temperatura, condições meteorológicas e uma imagem representativa do local. Utiliza APIs de clima e imagens para oferecer uma experiência rápida, visual e informativa sobre diferentes lugares do mundo.</p>
+                    <div id="projectIcons">
+                        <!-- Ícones são inseridos aqui via JS -->
+                    </div>
+                    <div class="site_button_project">
+                        <a href="#" target="_blank" id="btn_project" class="btn">Ver Site</a> <!-- Class btn -->
+                    </div>
                 </div>
             </div>
-
-        </div>
         </div> 
+    </section> <!-- Class /projects | ID /projects -->
 
-    </section> <!-- Class /serviços | ID /serviços -->
-
-    <section class="planos" id="planos" style="background-color: rgb(102, 255, 0);"> <!-- Class planos | ID planos -->
-        <h1>SECTION PLANOS</h1>
+    <section class="planos" id="planos" style="background-color: rgb(0, 0, 0);"> <!-- Class planos | ID planos -->
+        <div class="title_content">
+            <div class="circle_title"></div> 
+            <span class="title">SKILLS</span>
+            <h2 class="main_title">SKILLS</h2>
+        </div>
+        <div class="container_detalhe_title">
+            <div class="detalhe_left_title"></div>
+            <div class="detalhe_center_title"></div>
+            <div class="detalhe_left_title"></div>
+        </div>
+        <div class="container_geral">
+            <div class="container_esquerda">
+            </div>
+            <div class="container_direita">
+            </div>
+        </div>
     </section> <!-- Class /planos | ID /planos -->
     
     <section class="depoimentos" id="depoimentos" style="background-color: rgb(255, 115, 0);"> <!-- Class depoimentos | ID depoimentos -->

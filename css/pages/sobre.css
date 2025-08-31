@@ -1,44 +1,123 @@
-.sobre_content {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
+#sobre { /* Background da section */
+  background-color: black;
 }
 
-.circle_about {
-    position: absolute;
-    width: 13rem;
-    height: 13rem;
-    background-color: #1f2f8ab0;
-    border-radius: 50%;
-    filter: blur(5rem);
-    z-index: 0;
+.sobre_content { /* Aqui começa estilos gerais para o efeito de titulo "About" */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
+.container_secundario_about { /* Container geral que engloba o container de imagem e o container de descrição */
+  width: 100%; 
+  display: flex; 
+  padding: 1rem; 
+  flex-wrap: wrap; 
+  box-sizing: border-box;
+}
 
+.container_imagem_about { /* Container da esquerda que engloba a imagem */
+  flex: 1 1 300px; 
+  min-width: 250px; 
+  height: auto; 
+  display: flex; 
+  align-items: center;
+  justify-content: center
+}
 
+#avatar { /* Avatar image */
+  width: 90%; 
+  height: 70%;
+}
 
+#h3_about {
+  color: white;
+}
 
+#paragraph_about {
+  color: white;
+}
 
+#h4_about {
+  color: white;
+}
 
+.container_descricao_about { /* Container da direita que engloba a descrição */
+  flex: 7 1 300px; 
+  min-width: 250px; 
+  padding: 2rem; 
+  box-sizing: border-box; 
+  display: flex; 
+  flex-direction: column;
+}
 
+.container_profissao { /* Container que engloba as profissões */
+  width: 100%; 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 1rem; 
+  color: white; 
+  font-size: 1.7rem; 
+  margin-bottom: 1rem; 
+  box-sizing: border-box;
+}
 
+.profissao_frontend {
+  width: 200px; 
+  height: 5rem; 
+  display: flex; 
+  background-color: #161515; 
+  justify-content: center; 
+  align-items: center; 
+  padding: .5rem; 
+  border-radius: 50px; 
+  border: 1.5px solid rgba(255, 255, 255, 0.849); 
+  flex-shrink: 0; flex-grow: 0;
+}
 
+.profission_span { 
+  font-family: Rajdhani, 
+  sans-serif; 
+  font-size: 1.6rem; 
+  white-space: nowrap;
+}
 
+.connect_me { /* Container que engloba o connect with me */
+  width: 100%; 
+  flex-shrink: 0; 
+  padding: 1rem; 
+  box-sizing: border-box; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 1rem;
+}
 
-.container_contato {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 50px 20px;   
-    color: #fff;
+#h4_connect_me {
+  font-size: 2.3rem; 
+  color: white; 
+  margin: 0; 
+  align-self: self-start;
+}
+
+.container_connect_button { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 1rem; 
+  justify-content: center; 
+  align-self: flex-start;
 }
 
 .contato-item {
   text-align: center;
   max-width: 200px;
   transition: transform 0.3s ease;
+  padding: 0.5rem 1rem; 
+  border-radius: 8px; 
+  text-align: center; 
+  color: white; 
+  min-width: 120px;
 }
 
 .contato-item:hover {
@@ -49,7 +128,10 @@
   transform: scale(1.2);
 }
 
-
+.collor_connect_icon {
+  color: white; 
+  text-decoration: none;
+}
 
 .icone {
   width: 60px;
@@ -61,6 +143,8 @@
   align-items: center;
   justify-content: center;
   transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 2rem; 
+  margin-bottom: 0.3rem;
 }
 
 .icone i {
