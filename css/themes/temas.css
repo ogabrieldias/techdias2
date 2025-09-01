@@ -13,6 +13,7 @@
     --color-title: #00FFF5;
     /* Cor de texto invertida */
     --text-color-invert: white;
+    --text-color-white: white;
     /* Cor do efeito de titulo entre sections */
     --text-color-big-title-effect: #00000045;
     --text-color-main-title-effect: black;
@@ -32,6 +33,9 @@
 
     /* Cor de borda de botão */
     --border-button-color: rgb(4, 217, 57);
+
+    /* Cor de texto de botão */
+    --text-color-button: color-mix(in oklab, #fff 80%, transparent);
 
     /* Efeitos e sombras */
     --shadow-color: rgba(0, 0, 0, .2);
@@ -56,6 +60,7 @@
     
     /* Cor de texto invertida */
     --text-color-invert: black;
+    --text-color-white: white;
 
     /* Cor do efeito de titulo entre sections */
     --text-color-big-title-effect: #ffffff45;
