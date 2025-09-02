@@ -106,36 +106,3 @@
 
 
 
-
-
-.scroll {
-  margin-top: 50px;
-  margin-inline: auto;
-  max-width: 700px;
-  padding: 25px;
-  border-radius: 5px;
-  overflow: hidden;
-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
-
-.scroll__container {
-  display: flex;
-  gap: 10px;
-  width: max-content;
-  animation: scrollInfinito 20s linear infinite;
-}
-
-.scroll__item {
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  white-space: nowrap;
-  border-radius: 5px;
-}
-
-@keyframes scrollInfinito {
-  to {
-    translate: calc(-100%);
-  }
-}

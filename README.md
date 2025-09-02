@@ -37,8 +37,3 @@ Contém todos os arquivos JavaScript para adicionar interatividade à página.
 ### 7. **`videos/`**
 Diretório para vídeos que podem ser usados na aplicação, como vídeos promocionais ou de apresentação.
 
-## Como Rodar o Projeto
-
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seuusuario/seuprojeto.git

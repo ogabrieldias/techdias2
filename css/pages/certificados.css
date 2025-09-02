@@ -7,9 +7,12 @@
 }
 
 #h3_certificados {
-    color: var(--text-color-figma);
+    color: var(--text-color-figma);    
+    margin-top: 3rem;
+    font-size: 4rem;
 }
 
 #paragraph_certificados {
     color: var(--text-color-figma);
+    font-size: 2.5rem;
 }
