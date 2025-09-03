@@ -66,6 +66,7 @@
 .header.sticky #darkMode-icon {
     color: var(--text-color-figma);
     opacity: .9;
+    margin-right: 3rem;
 }
 
 #menu-icon {

@@ -107,7 +107,7 @@
 
 #h4_connect_me {
   font-size: 2.3rem; 
-  color: white; 
+  color: var(--text-color-figma); 
   margin: 0; 
   align-self: self-start;
 }

@@ -1,0 +1,59 @@
+@media (max-width: 320px) {
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid var(--cor-destaque);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    #menu-icon {
+        font-size: 3.6rem; 
+        color: var(--cor-destaque);
+        display: block;
+    }
+
+    .h2_home {
+        font-size: 3rem;
+    }
+
+    .home-content h1 {
+        font-size: 7rem;
+    }
+
+    #container_connect_button_home {
+        margin: 4rem 0px 0px 0px;
+    }
+
+    .title {
+        font-size: 6rem !important;
+    }
+
+    .main_title {
+        font-size: 2.75rem !important;
+    }
+
+    .container_secundario_about {
+        flex-direction: column;
+    }
+
+    .container_profissao {
+        gap: 1rem;
+    }
+
+    
+    .contato-item {
+        min-width: 99px;
+    }
+
+
+}

@@ -92,53 +92,22 @@ input.btn, a.btn {
 
 }
 
-input.btn:hover, a.btn:hover{
+input.btn:hover, a.btn:hover {
     background: var(--button-background-hover-color);
     color: var(--white-color);
     
 }
 
-.imagem_placa_home {
-    display: flex;
-    align-items: center;
-    padding: 0rem 6% 3rem;
-    position: absolute;
-    top: 46rem;
-    right: 0;
-    width: 100%;
-    height: 44.8vh;
-    /* min-height: 100vh; */
-    flex-direction: column;
+#container_connect_button_home {
+    margin: 3rem;
 }
 
-.imagem_home {
-    width: 100%; /* Ajusta para a largura total do contêiner */
-    height: 45.7vh; /* Ajusta a altura para 100% da altura da viewport */
-    object-fit: fill; /* Faz a imagem cobrir o espaço sem distorcer */
-    z-index: 2;
-    position: relative;
-    background-size: cover; /* Garante que a imagem cubra todo o espaço */
-}
-/* Aqui termina a configuração da section home */
-
-.circle-effect {
-    position: absolute;
-    top: 68rem;
-    left: 50%;
-    /* transform: translateX(-50%); */
-    width: 40rem;
-    height: 40rem;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7));
-    filter: blur(4rem);
-    opacity: 0.6;
-    z-index: -1;
-    pointer-events: none;
+.icone {
+    outline: .2rem solid transparent;
+    transition: .5s ease;
 }
 
-#circle-effect-left-home {
-    right: 50%;
-    left: auto;
-    top: 34rem;
+.icone:hover {
+    outline-color: var(--white-color); 
 }
 
