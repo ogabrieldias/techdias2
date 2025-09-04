@@ -126,7 +126,7 @@
 }
 
 #btn_project:hover {
-    outline-color: var(--white-color); 
+    outline-color: var(--text-color-figma); 
 }
 
 /* Aqui termina a configuração geral das molduras e os titulos a direita */

@@ -108,6 +108,7 @@ input.btn:hover, a.btn:hover {
 }
 
 .icone:hover {
-    outline-color: var(--white-color); 
+    outline-color: var(--text-color-figma); 
+    outline-offset: 2px;
 }
 

@@ -84,7 +84,7 @@
 .profissao_about:hover {
   transform: scale(1.10);
   background-color: var(--button-background-color-02-hover);
-  outline-color: var(--white-color); 
+  outline-color: var(--text-color-figma); 
 }
 
 .profission_span { 

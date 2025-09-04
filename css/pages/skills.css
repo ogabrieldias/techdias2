@@ -29,7 +29,7 @@
 .container_skills_singular:hover {
     transform: rotate(5deg) scale(1.1);
     background-color: #3c3c3c;
-    outline-color: var(--white-color); 
+    outline-color: var(--text-color-figma); 
 }
 
 .icone_skill {
@@ -48,5 +48,6 @@
 
 .span_skill {
     font-size: 1.6rem;
+    text-align: center;
 }
 
