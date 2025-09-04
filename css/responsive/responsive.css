@@ -35,6 +35,8 @@
     .home-content h1 {
         font-size: 7rem;
     }
+    
+    
 
     #container_connect_button_home {
         margin: 4rem 0px 0px 0px;
@@ -81,6 +83,7 @@
     .titulo_projeto { /* Titulo do projeto */
         font-size:4rem; 
         margin-bottom:1rem; 
+        text-align: center;
     }
 
     #titulo_clima {
@@ -197,8 +200,8 @@
     .titulo_projeto { /* Titulo do projeto */
         font-size:4rem; 
         margin-bottom:1rem; 
+        text-align: center;
     }
-
 
     .paragraph_projeto { /* Paragrafo do projeto */
         font-size: 1.7rem; 
@@ -210,4 +213,102 @@
         margin: auto;
     }
 
+}
+
+
+@media (max-width: 425px) {
+    
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color-header);
+        border-top: .1rem solid var(--text-color-figma);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    #menu-icon {
+        font-size: 3.6rem; 
+        color: var(--text-color-figma);
+        display: block;
+    }
+
+    .h2_home {
+        font-size: 3rem;
+    }
+
+    .home-content h1 {
+        font-size: 7rem;
+    }
+
+    #container_connect_button_home {
+        margin: 4rem 0px 0px 0px;
+    }
+
+    .title {
+        font-size: 4.3rem !important;
+    }
+
+    .main_title {
+        font-size: 2.45rem !important;
+        
+    }
+
+    .container_secundario_about {
+        flex-direction: column;
+    }
+
+    .h3{
+        text-align: center;
+    }
+
+    .paragraph {
+        font-size: 1.6rem !important;
+        text-align: center;
+    }
+
+    .profission_span {
+        font-size: 1.6rem;
+    }
+
+    .container_profissao {
+        gap: 1rem;
+    }
+
+    .profissao_about {
+        height: 4.3rem;
+    }
+
+    .contato-item {
+        min-width: 99px;
+    }
+
+    .titulo_projeto { /* Titulo do projeto */
+        font-size:4rem; 
+        margin-bottom:1rem; 
+        text-align: center;
+    }
+
+    .paragraph_projeto { /* Paragrafo do projeto */
+        font-size: 1.7rem; 
+        color: var(--text-color-figma);
+        margin-bottom: 1rem;
+    }
+
+    .footer-iconTop {
+        margin: auto;
+    }
 }

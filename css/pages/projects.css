@@ -88,6 +88,7 @@
     min-width: 250px; 
     padding: 2rem; 
     box-sizing: border-box;
+    margin-bottom: 13rem;
 }
 
 .fixedText { /* Texto fixo a direita */
@@ -99,6 +100,7 @@
     font-size:4rem; 
     margin-bottom:1rem; 
     transition:color 0.3s ease;
+    text-align: center;
 }
 
 #projectParagraph { /* Paragrafo do projeto */

@@ -75,6 +75,7 @@ section {
     font-weight: 700;
     padding-bottom: 2rem;
     color: var(--text-color-figma);
+    text-align: center
 }
 
 input.btn, a.btn {
