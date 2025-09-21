@@ -86,6 +86,10 @@
         display: block;
     }
 
+    .container_descricao {
+        margin-bottom: 13rem;
+    }
+
     .fixedText_none {
         display: block;
     }
@@ -449,6 +453,10 @@
         display: none!important;
     }
 
+    .container_descricao {
+        margin-bottom: 0rem;
+    }
+
     .fixedText_none {
         display: none;
     }
@@ -571,6 +579,8 @@
     .imagem_desktop {
         display: block!important;
     }
+
+
 
     .fixedText_none {
         display: none;
